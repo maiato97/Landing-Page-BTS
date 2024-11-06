@@ -225,7 +225,7 @@ button:hover {
     display: block;
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1000px){
     .video-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -247,7 +247,7 @@ button:hover {
     }
 }
 
-@media (min-width: 601px) and (max-width: 1023px){
+@media (max-width: 999px){
     .video-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -268,28 +268,11 @@ button:hover {
     #home{
         margin-top: -30px;
     }
-}
-
-/*Responsividade para tablet e celular*/
-@media (max-width: 1023px){
-    .menu-hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 40px;
-        height: 30px;
-        cursor: pointer;
-        z-index: 1001;
-        padding: 2px;
-    }
 
     nav {
         background-color: #9a12bd;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        padding: 20px;
+        padding: 15px;
         font-family: "Afacad Flux", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
@@ -297,18 +280,6 @@ button:hover {
         justify-content: space-between;
         border-radius: 5px;
         align-items: center;
-    }
-    .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-    .menu li {
-        margin: 30px 0;
-        text-align: center;
-    }
-    .menu.open {
-        display: flex;
     }
 
     .prev {
@@ -349,6 +320,34 @@ button:hover {
         width: 100%;
         height: auto;
     }
+
+    .menu-hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1001;
+        padding: 2px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu li {
+        margin: 30px 0;
+        text-align: center;
+    }
+    .menu.open {
+        display: flex;
+    }
+
 }
 
 #countdown{
