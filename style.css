@@ -114,6 +114,10 @@ nav ul li a:hover {
     height: 220px;
 }
 
+.homeimg img:hover {
+    transform: scale(1.5);
+}
+
 .carrossel h3 {
     font-family: "Afacad Flux", sans-serif;
 }
